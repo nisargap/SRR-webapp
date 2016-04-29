@@ -282,17 +282,8 @@ def main():
 			if os.path.exists(handshake_file):
 				print R+'\n [!] '+O+'you already have a handshake file for %s:' % (C+target.ssid+W)
 				print '        %s\n' % (G+handshake_file+W)
-				print GR+' [+]'+W+' do you want to '+G+'[s]kip'+W+', '+O+'[c]apture again'+W+', or '+R+'[o]verwrite'+W+'?'
-				ri = 'x'
-				while ri != 's' and ri != 'c' and ri != 'o': 
-					ri = raw_input(GR+' [+] '+W+'enter '+G+'s'+W+', '+O+'c,'+W+' or '+R+'o'+W+': '+G).lower()
-				print W+"\b",
-				if ri == 's': 
-					targets.pop(index)
-					index -= 1
-				elif ri == 'o': 
-					remove_file(handshake_file)
-					continue
+				print 'removed handshake file, starting over'
+				remove_file(handshake_file)
 			index += 1
 			
 
