@@ -1,0 +1,39 @@
+
+  .;'                     `;,    
+ .;'  ,;'             `;,  `;,   WiFite v2 (r85)
+.;'  ,;'  ,;'     `;,  `;,  `;,  
+::   ::   :   ( )   :   ::   ::  automated wireless auditor
+':.  ':.  ':. /_\ ,:'  ,:'  ,:'  
+ ':.  ':.    /___\    ,:'  ,:'   designed for Linux
+  ':.       /_____\      ,:'     
+           /       \             
+
+ [+] set interface: wlan0
+ [+] targeting ESSID "retrievers"
+
+ [!] the program cowpatty is not required, but is recommended
+
+ [+] scanning for wireless devices...
+ [!] could not find wireless interface "wlan0"
+ [+] enabling monitor mode on wlan0... done
+ [!] could not find wireless interface "wlan0"
+ [+] initializing scan (mon0), updates at 5 sec intervals, CTRL+C when ready.
+ [0:00:00] scanning wireless networks. 0 targets and 0 clients found    [0:00:00] scanning wireless networks. 0 targets and 0 clients found    [0:00:00] scanning wireless networks. 0 targets and 0 clients found    [0:00:01] scanning wireless networks. 0 targets and 0 clients found    [0:00:01] scanning wireless networks. 0 targets and 0 clients found    [0:00:01] scanning wireless networks. 0 targets and 0 clients found    [0:00:02] scanning wireless networks. 0 targets and 0 clients found    [0:00:02] scanning wireless networks. 0 targets and 0 clients found    [0:00:02] scanning wireless networks. 0 targets and 0 clients found    [0:00:03] scanning wireless networks. 0 targets and 0 clients found    [0:00:03] scanning wireless networks. 0 targets and 0 clients found    [0:00:03] scanning wireless networks. 0 targets and 0 clients found    [0:00:03] scanning wireless networks. 0 targets and 0 clients found    [0:00:04] scanning wireless networks. 0 targets and 0 clients found    [0:00:04] scanning wireless networks. 0 targets and 0 clients found    [0:00:04] scanning wireless networks. 0 targets and 0 clients found   
+ [+] checking for WPS compatibility... done
+
+ [0:10:00] preparing attack "retrievers" (C0:56:27:21:93:38)
+                                                              [0:10:00] attempting fake authentication (1/5)...  failed                                                               [0:10:00] attempting fake authentication (2/5)...  failed                                                               [0:10:00] attempting fake authentication (3/5)...  failed                                                               [0:10:00] attempting fake authentication (4/5)...  failed                                                               [0:10:00] attempting fake authentication (5/5)...  failed 
+ [0:10:00] attacking "retrievers" via arp-replay attack
+ [0:10:00] captured 0 ivs @ 0 iv/sec  [0:09:59] [0:09:58] [0:09:57] [0:09:56] [0:09:55] [0:09:54]                                                     [0:09:54] captured 17 ivs @ 3 iv/sec  [0:09:54] attack failed: aireplay-ng exited unexpectedly
+                                                              [0:10:00] attempting fake authentication (1/5)...  failed                                                               [0:10:00] attempting fake authentication (2/5)...  failed                                                               [0:10:00] attempting fake authentication (3/5)...  failed                                                               [0:10:00] attempting fake authentication (4/5)...  failed                                                               [0:10:00] attempting fake authentication (5/5)...  failed 
+ [0:10:00] attacking "retrievers" via chop-chop attack
+ [0:10:00] captured 0 ivs @ 0 iv/sec  [0:09:59] [0:09:58] [0:09:57] [0:09:56] [0:09:55] [0:09:54]                                                     [0:09:54] captured 26 ivs @ 1 iv/sec  [0:09:54] attack failed: unable to generate keystream        
+                                                              [0:10:00] attempting fake authentication (1/5)...  failed                                                               [0:10:00] attempting fake authentication (2/5)...  failed                                                               [0:10:00] attempting fake authentication (3/5)...  failed                                                               [0:10:00] attempting fake authentication (4/5)...  failed                                                               [0:10:00] attempting fake authentication (5/5)...  failed 
+ [0:10:00] attacking "retrievers" via fragmentation attack
+ [0:10:00] captured 0 ivs @ 0 iv/sec  [0:09:59] [0:09:58] [0:09:57] [0:09:56] [0:09:55] [0:09:54]                                                     [0:09:54] captured 37 ivs @ 2 iv/sec  [0:09:54] attack failed: unable to generate keystream        
+                                                              [0:10:00] attempting fake authentication (1/5)...  failed                                                               [0:10:00] attempting fake authentication (2/5)...  failed                                                               [0:10:00] attempting fake authentication (3/5)...  failed                                                               [0:10:00] attempting fake authentication (4/5)...  failed                                                               [0:10:00] attempting fake authentication (5/5)...  failed 
+ [0:10:00] attacking "retrievers" via caffe-latte attack
+ [0:10:00] captured 0 ivs @ 0 iv/sec  [0:09:59] [0:09:58] [0:09:57] [0:09:56] [0:09:55] [0:09:54]                                                     [0:09:54] captured 53 ivs @ 3 iv/sec  [0:09:54] attack failed: aireplay-ng exited unexpectedly
+                                                              [0:10:00] attempting fake authentication (1/5)...  failed                                                               [0:10:00] attempting fake authentication (2/5)...  failed                                                               [0:10:00] attempting fake authentication (3/5)...  failed                                                               [0:10:00] attempting fake authentication (4/5)...  failed                                                               [0:10:00] attempting fake authentication (5/5)...  failed 
+ [0:10:00] attacking "retrievers" via p0841 attack
+ [0:10:00] captured 0 ivs @ 0 iv/sec  [0:09:59] [0:09:58] [0:09:57] [0:09:56] [0:09:55] [0:09:54]                                                     [0:09:54] captured 243 ivs @ 38 iv/sec  [0:09:53] [0:09:52] [0:09:51] [0:09:50] [0:09:49] [0:09:48]                                                     [0:09:48] captured 278 ivs @ 7 iv/sec  [0:09:47]

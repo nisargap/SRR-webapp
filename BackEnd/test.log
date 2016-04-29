@@ -1,0 +1,160 @@
+
+[32m  .;'                     `;,    
+[32m .;'  ,;'             `;,  `;,   [0mWiFite v2 (r85)
+[32m.;'  ,;'  ,;'     `;,  `;,  `;,  
+[32m::   ::   :   [37m( )[32m   :   ::   ::  [37mautomated wireless auditor
+[32m':.  ':.  ':. [37m/_\[32m ,:'  ,:'  ,:'  
+[32m ':.  ':.    [37m/___\[32m    ,:'  ,:'   [37mdesigned for Linux
+[32m  ':.       [37m/_____\[32m      ,:'     
+[32m           [37m/       \[32m             
+[0m
+
+[31m [!][33m the program [31mcowpatty[33m is not required, but is recommended[0m
+
+[37m [+][0m scanning for wireless devices...
+[37m [+] [32minitializing scan[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+ [37m[0:00:00][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:00][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:00][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:01][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:01][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:01][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:02][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:02][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:02][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:04][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:04][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:04][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:05][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:05][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:05][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:06][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:06][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:07][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:07][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:07][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:08][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:08][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:09][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:09][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:09][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 45db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 34db[0m   [31m no[0m   [32mclient[0m
+
+ [37m[0:00:10][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m6[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 46db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 30db[0m   [31m no[0m   [32mclients[0m
+
+ [37m[0:00:10][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m7[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 46db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 30db[0m   [31m no[0m   [32mclients[0m
+
+ [37m[0:00:11][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m7[0m clients found   [3;J[H[2J[37m
+ [+] [32mscanning[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+
+   NUM ESSID                 CH  ENCR  POWER  WPS?  CLIENT
+   --- --------------------  --  ----  -----  ----  ------
+   [32m 1[0m  [36mEA3500              [0m [32m  1 [0m [33m WPA2[0m [32m 75db[0m   [31m no[0m   [32mclients[0m
+   [32m 2[0m  [36mFiOS-X6ZPG          [0m [32m  1 [0m [33m WPA2[0m [33m 46db[0m   [31m no[0m 
+   [32m 3[0m  [36mretrievers          [0m [32m  1 [0m [32m WEP [0m [31m 30db[0m   [31m no[0m   [32mclients[0m
+
+ [37m[0:00:11][0m [32mscanning[0m wireless networks. [32m3[0m targets and [32m7[0m clients found   [3;J[H[2J

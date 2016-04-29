@@ -1,0 +1,56 @@
+
+[32m  .;'                     `;,    
+[32m .;'  ,;'             `;,  `;,   [0mWiFite v2 (r85)
+[32m.;'  ,;'  ,;'     `;,  `;,  `;,  
+[32m::   ::   :   [37m( )[32m   :   ::   ::  [37mautomated wireless auditor
+[32m':.  ':.  ':. [37m/_\[32m ,:'  ,:'  ,:'  
+[32m ':.  ':.    [37m/___\[32m    ,:'  ,:'   [37mdesigned for Linux
+[32m  ':.       [37m/_____\[32m      ,:'     
+[32m           [37m/       \[32m             
+[0m
+[37m [+][0m targeting ESSID "[32mretrievers[0m"
+
+[31m [!][33m the program [31mcowpatty[33m is not required, but is recommended[0m
+
+[37m [+][0m scanning for wireless devices...
+[37m [+][0m enabling monitor mode on [32mwlan0[0m... done
+[37m [+] [32minitializing scan[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+ [37m[0:00:00][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:00][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:00][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:01][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:01][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:01][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:02][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:02][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:02][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:04][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:04][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:04][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:05][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:05][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:05][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found   
+[37m [+][0m checking for [32mWPS compatibility[0m... done
+[31m
+ [!][33m you have already cracked this access point's key![0m
+[31m [!] [36mretrievers[0m: "[32m027C92F356[0m"
+[37m [+] [0mdo you want to crack this access point again? ([32my/[33mn[0m): [31m
+ (^D)[33m interrupted
+[0m
+[37m [+][0m disabling monitor mode on [32mmon0[0m... done
+[37m [+][0m quitting
+
+
+[32m  .;'                     `;,    
+[32m .;'  ,;'             `;,  `;,   [0mWiFite v2 (r85)
+[32m.;'  ,;'  ,;'     `;,  `;,  `;,  
+[32m::   ::   :   [37m( )[32m   :   ::   ::  [37mautomated wireless auditor
+[32m':.  ':.  ':. [37m/_\[32m ,:'  ,:'  ,:'  
+[32m ':.  ':.    [37m/___\[32m    ,:'  ,:'   [37mdesigned for Linux
+[32m  ':.       [37m/_____\[32m      ,:'     
+[32m           [37m/       \[32m             
+[0m
+[37m [+][0m targeting ESSID "[32mretrievers[0m"
+
+[31m [!][33m the program [31mcowpatty[33m is not required, but is recommended[0m
+
+[37m [+][0m scanning for wireless devices...
+[37m [+][0m enabling monitor mode on [32mwlan0[0m... done
+[37m [+] [32minitializing scan[0m ([32mmon0[0m), updates at 5 sec intervals, [32mCTRL+C[0m when ready.
+ [37m[0:00:00][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:00][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:00][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:01][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:01][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:01][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:02][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:02][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:02][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:03][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:04][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:04][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:04][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:05][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:05][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found    [37m[0:00:05][0m [32mscanning[0m wireless networks. [32m0[0m targets and [32m0[0m clients found   
+[37m [+][0m checking for [32mWPS compatibility[0m... done
+[31m
+ [!][33m you have already cracked this access point's key![0m
+[31m [!] [36mretrievers[0m: "[32m027C92F356[0m"
+[37m [+] [0mdo you want to crack this access point again? ([32my/[33mn[0m): [31m
+ (^D)[33m interrupted
+[0m
+[37m [+][0m disabling monitor mode on [32mmon0[0m... done
+[37m [+][0m quitting
+
