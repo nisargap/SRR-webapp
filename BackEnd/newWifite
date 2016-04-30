@@ -1042,13 +1042,10 @@ def scan(channel=0, iface='', tried_rtl8187_fix=False):
 			(targets, clients) = parse_csv(temp + 'wifite-01.csv')
 
                         #here we can use the targets and clients variables from wifite-01.csv to feed the available wifi APs into Mongo
-			ourFile = open("parse.txt","a")
-			ourFile.write("\n")
+			ourFile = open("availableAPs.txt","w")
 			for i in targets:
-				ourFile.write(str(i))
-			for i in clients:
-				ourFile.write(str(i))
-
+				ourFile.write(str(i.ssid))
+                                ourFile.write("\n")
 			ourFile.close()
 
 			# If we are targeting a specific ESSID/BSSID, skip the scan once we find it.
