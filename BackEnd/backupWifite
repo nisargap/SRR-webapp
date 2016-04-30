@@ -2300,12 +2300,12 @@ def add_commas(n):
 
 def updatePacketsinDB(ivs, last_ivs):
         global wifiteDB
-        print "hello"
+        test = input("done")
 
 
 def updateCurrentAttack(someAttackName):
         global wifiteDB
-        print "hello"
+        test = input(someAttackName, "happened")
 
 
 
