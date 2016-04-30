@@ -1,0 +1,19 @@
+
+The front end will first access the database and view the collections named availableAPs to get the names of the wifi networks to display
+
+				 
+After that, we can ask the user on the front end to select a wifi ssid to attack. We take that and feed it into our modified wifite program.
+
+format for targeting a specific wifi network
+"newWifite -e <Wifi SSID>"
+
+We know that based on our network configurations, the first four of these attacks will fail, and the script will start the P0841 attack to collect most of the packets. We'll show the progress of each attack in the front end , and show that they fail. But then once the p0841 attack begins we'll start showing the packet collection and the rate of packet collection. 
+				
+
+CHOPCHOP   
+ARPREPLAY 
+CAFFELATTE
+FRAGMENT 
+P0841   
+HIRTE  
+
