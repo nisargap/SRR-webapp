@@ -182,8 +182,11 @@ if not os.uname()[0].startswith("Linux") and not 'Darwin' in os.uname()[0]: # OS
 
 # Create temporary directory to work in
 import tempfile
+
+#change the temp file directory to the current directory
 currentDirectory = os.getcwd()
 tempfile.tempdir = currentDirectory
+
 temp = tempfile.mkdtemp(prefix='wifite')
 if not temp.endswith(os.sep):
 	temp += os.sep
@@ -2950,13 +2953,6 @@ def wps_attack(iface, target):
 	
 	return cracked
 
-
-
-#c = CapFile('hs/KillfuckSoulshitter_C0-C1-C0-07-54-DC_2.cap', 'Killfuck Soulshitter', 'c0:c1:c0:07:54:dc')
-#WPA_CRACKER = 'aircrack'
-#cracked = wpa_crack(c)
-#print cracked
-#exit_gracefully(1)
 
 if __name__ == '__main__':
 	try:
