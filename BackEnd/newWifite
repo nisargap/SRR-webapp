@@ -2301,9 +2301,9 @@ def add_commas(n):
 def resetDatabase():
         global wifiteDB
         ourCollection = wifiteDB["ourCollection"]
-        ourCollection.update_one({"infoType":"packetsCollected"},
+        ourCollection.update({"infoType":"packetsCollected"},"$set":
                                  {"ivs":0,"last_ivs":0})
-        ourCollection.update_one({"infoType":"currentAttackName"},
+        ourCollection.update_one({"infoType":"currentAttackName"},"$set":
                                  {"currentAttackName":"None"})
         
 
