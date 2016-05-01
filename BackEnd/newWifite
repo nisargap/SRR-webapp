@@ -2301,10 +2301,10 @@ def add_commas(n):
 def resetDatabase():
         global wifiteDB
         ourCollection = wifiteDB["ourCollection"]
-        ourCollection.update({"infoType":"packetsCollected"},"$set":
-                                 {"ivs":0,"last_ivs":0})
-        ourCollection.update_one({"infoType":"currentAttackName"},"$set":
-                                 {"currentAttackName":"None"})
+        ourCollection.update({"infoType":"packetsCollected"},{"$set":
+                                                              {"ivs":0,"last_ivs":0}})
+        ourCollection.update_one({"infoType":"currentAttackName"},{"$set":
+                                                                   {"currentAttackName":"None"}})
         
 
 
@@ -2312,13 +2312,13 @@ def updatePacketsinDB(ivs, last_ivs):
         global wifiteDB
         ourCollection = wifiteDB["ourCollection"]
         ourCollection.update_one({"infoType":"packetsCollected"},
-                                 {"ivs":ivs,"last_ivs":last_ivs})
+                                 {"$set":{"ivs":ivs,"last_ivs":last_ivs}})
 
 
 def updateCurrentAttack(someAttackName):
         global wifiteDB
         ourCollection.update_one({"infoType":"currentAttackName"},
-                                 {"currentAttackName":someAttackName})
+                                 {"$set":{"currentAttackName":someAttackName}})
 
 
 
