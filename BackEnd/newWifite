@@ -268,7 +268,9 @@ def main():
 	(targets, clients) = scan(iface=iface, channel=TARGET_CHANNEL)
 	
 	try:
-		index = 0
+                #reset the values in the database
+                resetDatabase()
+                index = 0
 		while index < len(targets):
 			target = targets[index]
 			# Check if we have already cracked this target
@@ -2296,16 +2298,27 @@ def add_commas(n):
 	return result
 
 
+def resetDatabase():
+        global wifiteDB
+        ourCollection = wifiteDB["ourCollection"]
+        ourCollection.update_one({"infoType":"packetsCollected"},
+                                 {"ivs":0,"last_ivs":0})
+        ourCollection.update_one({"infoType":"currentAttackName"},
+                                 {"currentAttackName":"None"})
+        
 
 
 def updatePacketsinDB(ivs, last_ivs):
         global wifiteDB
-        print "hello"
+        ourCollection = wifiteDB["ourCollection"]
+        ourCollection.update_one({"infoType":"packetsCollected"},
+                                 {"ivs":ivs,"last_ivs":last_ivs})
 
 
 def updateCurrentAttack(someAttackName):
         global wifiteDB
-        print "hello"
+        ourCollection.update_one({"infoType":"currentAttackName"},
+                                 {"currentAttackName":someAttackName})
 
 
 
@@ -2466,6 +2479,7 @@ def attack_wep(iface, target, clients):
 					WEP_FINDINGS.append('')
 					
 					save_cracked(target.bssid, target.ssid, key, 'WEP')
+                                        #update database to show that its been cracked and also the password for the network
 					
 					# Kill processes
 					send_interrupt(proc_airodump)
