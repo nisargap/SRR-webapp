@@ -1,0 +1,88 @@
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 495-171-313
+192.168.1.1 - - [30/Apr/2016 23:45:13] "GET / HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:13] "GET /static/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:13] "GET /static/bower_components/metisMenu/dist/metisMenu.min.css HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:13] "GET /static/dist/css/timeline.css HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:13] "GET /static/dist/css/sb-admin-2.css HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:13] "GET /static/bower_components/morrisjs/morris.css HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:13] "GET /static/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:13] "GET /static/bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:14] "GET / HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET / HTTP/1.1" 200 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/bower_components/metisMenu/dist/metisMenu.min.css HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/dist/css/timeline.css HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/dist/css/sb-admin-2.css HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/bower_components/morrisjs/morris.css HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/bower_components/metisMenu/dist/metisMenu.min.js HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/bower_components/raphael/raphael-min.js HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/bower_components/morrisjs/morris.min.js HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/js/morris-data.js HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /static/dist/js/sb-admin-2.js HTTP/1.1" 304 -
+192.168.1.1 - - [30/Apr/2016 23:45:24] "GET /favicon.ico HTTP/1.1" 404 -
+150.70.173.57 - - [01/May/2016 00:03:30] "GET / HTTP/1.1" 200 -
+150.70.188.166 - - [01/May/2016 00:58:16] "GET / HTTP/1.1" 200 -
+150.70.173.8 - - [01/May/2016 01:20:32] "GET / HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:29] "GET / HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/bower_components/metisMenu/dist/metisMenu.min.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/dist/css/timeline.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/dist/css/sb-admin-2.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/bower_components/morrisjs/morris.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/bower_components/metisMenu/dist/metisMenu.min.js HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/bower_components/raphael/raphael-min.js HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:30] "GET /static/bower_components/morrisjs/morris.min.js HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:31] "GET /static/js/morris-data.js HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:31] "GET /static/dist/js/sb-admin-2.js HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:32] "GET /static/bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+192.168.1.1 - - [01/May/2016 01:35:37] "GET /favicon.ico HTTP/1.1" 404 -
+130.85.241.255 - - [01/May/2016 01:49:16] "GET / HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:16] "GET /static/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:16] "GET /static/dist/css/timeline.css HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:16] "GET /static/bower_components/metisMenu/dist/metisMenu.min.css HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:16] "GET /static/dist/css/sb-admin-2.css HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:16] "GET /static/bower_components/morrisjs/morris.css HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:16] "GET /static/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:17] "GET /static/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:17] "GET /static/bower_components/metisMenu/dist/metisMenu.min.js HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:17] "GET /static/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:17] "GET /static/bower_components/raphael/raphael-min.js HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:17] "GET /static/bower_components/morrisjs/morris.min.js HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:17] "GET /static/bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:17] "GET /static/js/morris-data.js HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:17] "GET /static/dist/js/sb-admin-2.js HTTP/1.1" 200 -
+130.85.241.255 - - [01/May/2016 01:49:18] "GET /favicon.ico HTTP/1.1" 404 -
+150.70.188.177 - - [01/May/2016 02:26:10] "GET / HTTP/1.1" 200 -
+150.70.173.56 - - [01/May/2016 02:31:10] "GET / HTTP/1.1" 200 -
+150.70.173.5 - - [01/May/2016 03:43:29] "GET / HTTP/1.1" 200 -
+150.70.188.178 - - [01/May/2016 07:02:29] "GET / HTTP/1.1" 200 -
+150.70.173.54 - - [01/May/2016 07:37:35] "GET / HTTP/1.1" 200 -
+150.70.188.168 - - [01/May/2016 08:38:06] "GET / HTTP/1.1" 200 -
+150.70.173.8 - - [01/May/2016 09:13:17] "GET / HTTP/1.1" 200 -
+150.70.188.182 - - [01/May/2016 09:39:15] "GET / HTTP/1.1" 200 -
+150.70.173.50 - - [01/May/2016 10:59:41] "GET / HTTP/1.1" 200 -
+ - - [01/May/2016 11:11:54] code 400, message Bad request syntax ('\xe7np\xb8\x7f4\xfb2`\x89[\xa5\x18\x91\x8fGLH\x03\x16"\xaa:\x9e\x15\xfc(7&\x80\xb5\xd1\xdd\xe0p\xcf\x81#\xceS\x80\xd9+\xf60\x16r\x9c\xe2\x8f}\x99[\xddsaI\xc4\x9d4\xe9\xbd\xfb\x12')
+ - - [01/May/2016 11:11:54] "Ánp∏4˚2`â[•ëèGLH"™:û¸(7&Äµ—›‡pœÅ#ŒSÄŸ+ˆ0rú‚è}ô[›saIƒù4ÈΩ˚" 400 -
+150.70.188.171 - - [01/May/2016 13:09:11] "GET / HTTP/1.1" 200 -
+150.70.188.170 - - [01/May/2016 13:39:17] "GET / HTTP/1.1" 200 -
+150.70.173.41 - - [01/May/2016 14:13:36] "GET / HTTP/1.1" 200 -
+150.70.188.179 - - [01/May/2016 14:28:37] "GET / HTTP/1.1" 200 -
+162.243.188.75 - - [01/May/2016 14:46:31] "GET / HTTP/1.0" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 193, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 184, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 165, in write
+    self.wfile.write(data)
+IOError: [Errno 104] Connection reset by peer
