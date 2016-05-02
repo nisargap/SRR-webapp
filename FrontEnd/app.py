@@ -4,12 +4,21 @@ app.config['DEBUG'] = True
 @app.route("/")
 def main():
 
+    # System call here to wifite
+    # and then kill process
+    
     return render_template("index.html")
 
 @app.route("/wifi")
 def wifi_page():
-
-    return render_template("wifipage.html")
+    
+    
+    with r as open('/home/pi/Documents/repo/SRR-webapp/BackEnd/availableAPs.txt', 'r'):
+        
+        print(r)
+        
+        
+    return render_template("wifipage.html", availableAPs = availableAPs)
 
 
 if __name__ == "__main__":
