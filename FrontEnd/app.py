@@ -31,6 +31,15 @@ def wifi_page():
             availableAPs.remove("\x00")
     return render_template("wifipage.html", availableAPs = availableAPs)
 
+@app.route("/getStatus")
+def get_attackStatus():
+    client = MongoClient()
+    wifiteDB = client["wifiteDB"]
+    ourCollection = wifiteDB["ourCollection"]
+    currentAttackDict = ourCollection.find({"infoType":"currentAttackName"})[0]
+    currentAttackName = currentAttackDict["currentAttackName"]
+    return jsonify(currentAttackName=currentAttackName)
+
 
 @app.route("/getPackets")
 def get_packets():
