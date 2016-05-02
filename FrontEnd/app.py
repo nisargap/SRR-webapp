@@ -12,12 +12,20 @@ def main():
 @app.route("/wifi")
 def wifi_page():
     
+    availableAPs = ""
     
-    with r as open('/home/pi/Documents/repo/SRR-webapp/BackEnd/availableAPs.txt', 'r'):
+    with open('/home/pi/Documents/repo/SRR-webapp/BackEnd/availableAPs.txt', 'r') as r:
         
-        print(r)
-        
-        
+
+        availableAPs = r.read()
+        availableAPs = set(availableAPs.splitlines())
+        print(availableAPs)
+        if " " in availableAPs:
+            availableAPs.remove(" ")
+        if "\n" in availableAPs:
+            availableAPs.remove("\n")
+        if "\x00" in availableAPs:
+            availableAPs.remove("\x00")
     return render_template("wifipage.html", availableAPs = availableAPs)
 
 

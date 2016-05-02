@@ -6,7 +6,6 @@
         <h1 class="page-header"><i class='fa fa-wifi 5x'></i> Network Analysis and Monitoring</h1>
         <!-- /.col-lg-12 -->
     </div>
-    {{ availableAPs }}
     <div class="row">
         <div class="col-md-9 col-lg-9">
         <table class="table">
@@ -17,18 +16,12 @@
       </tr>
     </thead>
     <tbody>
+      {% for element in availableAPs %}
       <tr>
-        <td>John</td>
-        <td><button class="btn btn-success">Start</button></td>
+	<td>{{ element }}</td>
+	<td><button class="btn btn-success">Start</button></td>
       </tr>
-      <tr>
-        <td>Mary</td>
-        <td><button class="btn btn-success">Start</button></td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td><button class="btn btn-success">Start</button></td>
-      </tr>
+      {% endfor %}
     </tbody>
   </table>
    </div>
