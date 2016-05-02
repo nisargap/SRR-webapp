@@ -1,4 +1,7 @@
 from flask import Flask, render_template
+from pymongo import MongoClient
+import subprocess
+
 app = Flask(__name__)
 app.config['DEBUG'] = True
 @app.route("/")
@@ -28,6 +31,19 @@ def wifi_page():
             availableAPs.remove("\x00")
     return render_template("wifipage.html", availableAPs = availableAPs)
 
+
+@app.route("/getPackets")
+def get_packets():
+    client = MongoClient()
+    wifiteDB = client["wifiteDB"]
+    ourCollection = wifiteDB["ourCollection"]
+    currentPacketDict = ourCollection.find({"infoType":"packetsCollected"})[0]
+    currentIVs = currentPacketDict["ivs"]
+    lastIVs = currentPacketDict["last_ivs"]
+    print currentIVs
+    print lastIVs
+
+                            
 
 if __name__ == "__main__":
 
