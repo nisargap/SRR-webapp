@@ -2174,6 +2174,12 @@ def save_cracked(bssid, ssid, key, encryption):
 	sep = chr(0)
 	fout = open('cracked.txt', 'a')
 	fout.write(bssid + sep + ssid + sep + key + sep + encryption + '\n')
+
+        #reset the available APs file
+        ourFile = open("availableAPs.txt","w")
+        ourFile.write("")
+        ourFile.close()
+        
 	fout.flush()
 	fout.close()
 
@@ -2305,7 +2311,9 @@ def resetDatabase():
                                                               {"ivs":0,"last_ivs":0}})
         ourCollection.update_one({"infoType":"currentAttackName"},{"$set":
                                                                    {"currentAttackName":"None"}})
-        
+        ourFile = open("availableAPs.txt","w")
+        ourFile.write("")
+        ourFile.close()
 
 
 def updatePacketsinDB(ivs, last_ivs):
