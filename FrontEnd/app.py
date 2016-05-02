@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,jsonify
 from pymongo import MongoClient
 import subprocess
 
@@ -40,8 +40,8 @@ def get_packets():
     currentPacketDict = ourCollection.find({"infoType":"packetsCollected"})[0]
     currentIVs = currentPacketDict["ivs"]
     lastIVs = currentPacketDict["last_ivs"]
-    print currentIVs
-    print lastIVs
+    rate = float(currentIVs - lastIVs)/5
+    return jsonify(ivs=currentIVs,last_ivs=lastIVs,rate=rate)
 
                             
 
