@@ -2412,15 +2412,14 @@ def attack_wep(iface, target, clients):
 
                         mystr = ""
 			print '\r %s attacking "%s" via' % (GR+sec_to_hms(WEP_TIMEOUT)+W, G+target.ssid+W),
-			if attack_num == 0:   mystr = 'arp-replay',
-			elif attack_num == 1: mystr = 'chop-chop',
-			elif attack_num == 2: mystr = 'fragmentation',
-			elif attack_num == 3: mystr = 'caffe-latte',
-			elif attack_num == 4: mystr = 'p0841',
-			elif attack_num == 5: mystr = 'hirte',
-                        print G + mystr
+			if attack_num == 0:   mystr = 'arp-replay'
+			elif attack_num == 1: mystr = 'chop-chop'
+			elif attack_num == 2: mystr = 'fragmentation'
+			elif attack_num == 3: mystr = 'caffe-latte'
+			elif attack_num == 4: mystr = 'p0841'
+			elif attack_num == 5: mystr = 'hirte'
+                        print G + mystr + 'attack' + W
                         updateCurrentAttack(mystr)
-                        print 'attack'+W
 			
 			print ' %s captured %s%d%s ivs @ %s iv/sec' % (GR+sec_to_hms(WEP_TIMEOUT)+W, G, total_ivs, W, G+'0'+W),
 			stdout.flush()
