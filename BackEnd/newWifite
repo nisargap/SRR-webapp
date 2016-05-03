@@ -2174,12 +2174,6 @@ def save_cracked(bssid, ssid, key, encryption):
 	sep = chr(0)
 	fout = open('cracked.txt', 'a')
 	fout.write(bssid + sep + ssid + sep + key + sep + encryption + '\n')
-
-        #reset the available APs file
-        ourFile = open("availableAPs.txt","w")
-        ourFile.write("")
-        ourFile.close()
-        
 	fout.flush()
 	fout.close()
 
@@ -2311,9 +2305,7 @@ def resetDatabase():
                                                               {"ivs":0,"last_ivs":0}})
         ourCollection.update_one({"infoType":"currentAttackName"},{"$set":
                                                                    {"currentAttackName":"None"}})
-        ourFile = open("availableAPs.txt","w")
-        ourFile.write("")
-        ourFile.close()
+        
 
 
 def updatePacketsinDB(ivs, last_ivs):
@@ -2321,7 +2313,12 @@ def updatePacketsinDB(ivs, last_ivs):
         ourCollection = wifiteDB["ourCollection"]
         ourCollection.update_one({"infoType":"packetsCollected"},
                                  {"$set":{"ivs":ivs,"last_ivs":last_ivs}})
+def storePassword(somePassword):
+        global wifiteDB
+        ourCollection = wifiteDB["ourCollection"]
+        ourCollection.update_one({"infoType":"password"},{"$set":{"password":somePassword}})
 
+                        
 
 def updateCurrentAttack(someAttackName):
         global wifiteDB
@@ -2485,7 +2482,7 @@ def attack_wep(iface, target, clients):
 					print '\n\n %s %s %s (%s)! key: "%s"' % (current_hms, G+'cracked', target.ssid+W, G+target.bssid+W, C+key+W)
 					WEP_FINDINGS.append('cracked %s (%s), key: "%s"' % (target.ssid, target.bssid, key))
 					WEP_FINDINGS.append('')
-					
+					storePassword(key)
 					save_cracked(target.bssid, target.ssid, key, 'WEP')
                                         #update database to show that its been cracked and also the password for the network
 					
