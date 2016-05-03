@@ -2322,6 +2322,7 @@ def storePassword(somePassword):
 
 def updateCurrentAttack(someAttackName):
         global wifiteDB
+        ourCollection = wifiteDB["ourCollection"]
         ourCollection.update_one({"infoType":"currentAttackName"},
                                  {"$set":{"currentAttackName":someAttackName}})
 
@@ -2355,7 +2356,8 @@ def attack_wep(iface, target, clients):
 	
 	print ' %s preparing attack "%s" (%s)' % \
 	           (GR+sec_to_hms(WEP_TIMEOUT)+W, G+target.ssid+W, G+target.bssid+W)
-	
+	myStr = target.ssid + " found. Preparing attack"
+        updateCurrentAttack(myStr)
 	interrupted_count = 0
 	
 	remove_airodump_files(temp + 'wep')
