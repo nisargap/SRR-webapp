@@ -62,7 +62,6 @@
         position: 'absolute' // Element positioning
     }
     $.ajaxSetup({
-        async: false,
         beforeSend: function () {
             var target = document.getElementById('loader');
             var spinner = new Spinner(opts).spin(target);
@@ -79,13 +78,14 @@
 
         console.log("Started");
 
-        setTimeout(function () {}, 1000);
+        setTimeout(function () {}, 5000);
 
-        while(true) {
-
-            setTimeout(function () {}, 2000);
+        for(var i = 0; i < 50000; ++i){
 
 
+
+            setTimeout(function() {
+                
             $.getJSON("/getPackets", function (response) {
 
                 console.log(response);
@@ -101,6 +101,12 @@
                 }
 
             }); // matches getJSON
+            
+            }, 3000);
+            
+            
+                
+            
         } // matches while loop	      
 
 
