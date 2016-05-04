@@ -1,11 +1,13 @@
-from flask import Flask, render_template,jsonify
+from flask import Flask, render_template,jsonify, request
 from pymongo import MongoClient
-import subprocess
-
+from subprocess import Popen, call
+import time
 app = Flask(__name__)
 app.config['DEBUG'] = True
+
+    
 @app.route("/")
-def main():
+def index():
 
     # System call here to wifite
     # and then kill process
@@ -19,7 +21,6 @@ def wifi_page():
     
     with open('/home/pi/Documents/repo/SRR-webapp/BackEnd/availableAPs.txt', 'r') as r:
         
-
         availableAPs = r.read()
         availableAPs = set(availableAPs.splitlines())
         print(availableAPs)
@@ -52,8 +53,31 @@ def get_packets():
     rate = float(currentIVs - lastIVs)/5
     return jsonify(ivs=currentIVs,last_ivs=lastIVs,rate=rate)
 
-                            
+@app.route("/startAttack/<ssid>")
+def startAttack(ssid):
+
+    global current_process
+    
+    newWifite = "/home/pi/Documents/repo/SRR-webapp/BackEnd/newWifite"
+
+    process = Popen(["sudo", newWifite, "-e", ssid])
+
+    return render_template("startedattack.html", ssid = ssid)
+
+
+def shutdown_server():
+
+    func = request.environ.get('werkzeug.server.shutdown')
+    if func is None:
+        raise RuntimeError("not running")
+    func()
+
+@app.route("/stopAttack")
+def stopAttack():
+
+    shutdown_server()
+    return "stopped server"
 
 if __name__ == "__main__":
 
-    app.run(host='0.0.0.0')
+    app.run(host="0.0.0.0")

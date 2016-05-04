@@ -3,30 +3,13 @@
 <div id="page-wrapper">
 
     <div class="row">
-        <h1 class="page-header"><i class='fa fa-wifi 5x'></i> Network Analysis and Monitoring</h1>
+        <h1 class="page-header"><i class='fa fa-wifi 5x'></i> Attack on {{ ssid }} Started Successfully</h1>
         <!-- /.col-lg-12 -->
     </div>
     <div id="loader"></div>
     <div class="row">
         <div class="col-md-9 col-lg-9">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Description</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for element in availableAPs %}
-                    <tr>
-                        <td>{{ element }}</td>
-                        <td>
-                            <a href="/startAttack/{{ element }}" class="btn btn-success">Start Attack</a>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+          <div id="packets"></div>
         </div>
     </div>
 
@@ -88,6 +71,41 @@
         },
         success: function () {}
     });
+</script>
+<script>
+
+  $(function() {
+
+
+  console.log("Started");
+
+  setTimeout(function() { }, 1000);
+
+  while(true){
+
+ setTimeout(function() { }, 2000);
+
+  
+  $.getJSON("/getPackets", function(response) {
+
+		      console.log(response);
+		      $("#packets").html("");
+		      $("#packets").append("<h2> IVs Collected: " + response.ivs + "</h2>");
+		      $("#packets").append("<h2> Last IVs: " + response.last_ivs + "</h2>");
+		      $("#packets").append("<h2> Current Rate in Packets/sec: " + response.rate + "</h2>");
+
+		      if (response.ivs > 10000) {
+
+                  $("#packets").append("<h1> Over 10k IVs collected </h2>");
+return;
+}
+
+    }); // matches getJSON
+}	// matches while loop	      
+		    
+
+		      }); // matches $(function......
+  
 </script>
 </body>
 
