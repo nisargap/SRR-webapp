@@ -100,6 +100,16 @@
 
                 
                 $("#status").html("<h2>" + response.currentAttackName + "</h2>");
+                
+                if (response.currentAttackName.indexOf("inished") >= 0) {
+                    
+                    $("#packets").append("<h2 style='color:\"#428bca\"'>Cracked Successfully </h2>");
+                    var passwordTime = setInterval(function () {
+                        
+                        getPassword();
+                        
+                    }, 2000);
+                }
 
             }); // matches getJSON
 
@@ -121,16 +131,9 @@
                     
 
                     $("#packets").append("<h2 style='color:\"#428bca\"'>Over 10k IVs collected </h2>");
-                    
-                    var passwordTime = setInterval(function () {
-                        
-                        getPassword();
-                        
-                    }, 2000);
-                    
+                    $("#packets").append("<h2 style='color:\"#428bca\"'>Attempting to Crack Password </h2>");
                     
                     clearInterval(time);
-                    clearInterval(time_two);
                     
                 }
 
