@@ -80,16 +80,9 @@
 
         setTimeout(function () {}, 3000);
 
-        $.ajaxSetup({
-            async: false
-        });
+      
         
-        for (var i = 0; i < 3000; ++i) {
-
-
-
-
-            setTimeout(function () {}, 3000);
+        var time = setInterval(function() {
             
             $.getJSON("/getPackets", function (response) {
 
@@ -100,17 +93,19 @@
                 $("#packets").append("<h2> Current Rate in Packets/sec: " + response.rate + "</h2>");
 
                 if (response.ivs > 10000) {
+                    
 
                     $("#packets").append("<h1> Over 10k IVs collected </h2>");
-                    return;
+                    
+                    clearInterval(time);
+                    
                 }
 
             }); // matches getJSON
+            
+        }, 5000);
+        
 
-
-
-
-        } // matches while loop	      
 
 
     }); // matches $(function......
