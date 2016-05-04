@@ -78,14 +78,19 @@
 
         console.log("Started");
 
-        setTimeout(function () {}, 5000);
+        setTimeout(function () {}, 3000);
 
-        for(var i = 0; i < 50000; ++i){
+        $.ajaxSetup({
+            async: false
+        });
+        
+        for (var i = 0; i < 3000; ++i) {
 
 
 
-            setTimeout(function() {
-                
+
+            setTimeout(function () {}, 3000);
+            
             $.getJSON("/getPackets", function (response) {
 
                 console.log(response);
@@ -101,12 +106,10 @@
                 }
 
             }); // matches getJSON
-            
-            }, 3000);
-            
-            
-                
-            
+
+
+
+
         } // matches while loop	      
 
 
