@@ -2419,6 +2419,7 @@ def attack_wep(iface, target, clients):
 			elif attack_num == 4: mystr = 'p0841'
 			elif attack_num == 5: mystr = 'hirte'
                         print G + mystr + 'attack' + W
+                        mystr = mystr + " attack started"
                         updateCurrentAttack(mystr)
 			
 			print ' %s captured %s%d%s ivs @ %s iv/sec' % (GR+sec_to_hms(WEP_TIMEOUT)+W, G, total_ivs, W, G+'0'+W),
@@ -2487,6 +2488,7 @@ def attack_wep(iface, target, clients):
 					WEP_FINDINGS.append('cracked %s (%s), key: "%s"' % (target.ssid, target.bssid, key))
 					WEP_FINDINGS.append('')
 					storePassword(key)
+                                        updateCurrentAttack("Finished. Password Retrieved")
 					save_cracked(target.bssid, target.ssid, key, 'WEP')
                                         #update database to show that its been cracked and also the password for the network
 					
