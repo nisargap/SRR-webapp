@@ -14,6 +14,16 @@ def index():
     
     return render_template("index.html")
 
+@app.route("/getPassword")
+def getPackets():
+    client = MongoClient()
+    wifiteDB = client["wifiteDB"]
+    ourCollection = wifiteDB["ourCollection"]
+    passwordDict = ourCollection.find({"infoType":"password"})[0]
+    password = passwordDict["password"]
+    return jsonify(password=password)
+                    
+
 @app.route("/wifi")
 def wifi_page():
     
