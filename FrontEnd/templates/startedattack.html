@@ -14,6 +14,7 @@
             <div id="password"></div>
         </div>
     </div>
+    <img id="lock-gif" src="{{ url_for('static', filename='img/lock.gif') }}">
 
 </div>
 
@@ -83,7 +84,7 @@
             
                     $("#password").html("");
                     $("#password").html("<h2> The password is: " + response.password + " </h2>");
-                    $('#loader').remove();
+                    $("#lock-gif").fadeOut(1000);
                 
             }
             
@@ -91,6 +92,7 @@
     }
     $(function () {
 
+        $("#lock-gif").hide();
 
         console.log("Started");
 
@@ -135,8 +137,7 @@
 
                     $("#packets").append("<h2 style='color:\"#428bca\"'>Over 10k IVs collected </h2>");
                     $("#packets").append("<h2 style='color:\"#428bca\"'>Attempting to Crack Password </h2>");
-                    var target = document.getElementById('loader');
-                    var spinner = new Spinner(opts).spin(target);
+                    $("#lock-gif").fadeIn(1000);
                     
                     clearInterval(time);
                     
