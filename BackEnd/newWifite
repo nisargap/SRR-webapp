@@ -254,7 +254,7 @@ def main():
 	global TARGETS_REMAINING, THIS_MAC, CRACKED_TARGETS,wifiteDB
 	
 	CRACKED_TARGETS = load_cracked() # Load previously-cracked APs from file
-
+        resetDatabase()
 	handle_args() # Parse args from command line, set global variables.
 	
 	initial_check() # Ensure required programs are installed.
@@ -1047,8 +1047,19 @@ def scan(channel=0, iface='', tried_rtl8187_fix=False):
 			ourFile = open("availableAPs.txt","w")
 			for i in targets:
 				ourFile.write(str(i.ssid))
-                                ourFile.write("\n")
-			ourFile.close()
+                                ourFile.write("\n")                        
+                        ourFile.close()
+                        ourFile = open("availableAPs.txt","a")
+                        ourFile.write("retrievers")
+                        ourFile.write("\n")                        
+                        ourFile.write("eduroam")
+                        ourFile.write("\n")                        
+                        ourFile.write("UMBC Campus")
+                        ourFile.write("\n")                        
+                        ourFile.write("UMBC Visitor")
+                        ourFile.write("\n")                        
+                        ourFile.close()                        
+                        
 
 			# If we are targeting a specific ESSID/BSSID, skip the scan once we find it.
 			if TARGET_ESSID != '':
@@ -2301,11 +2312,9 @@ def add_commas(n):
 def resetDatabase():
         global wifiteDB
         ourCollection = wifiteDB["ourCollection"]
-        ourCollection.update({"infoType":"packetsCollected"},{"$set":
-                                                              {"ivs":0,"last_ivs":0}})
-        ourCollection.update_one({"infoType":"currentAttackName"},{"$set":
-                                                                   {"currentAttackName":"None"}})
-        
+        ourCollection.update_one({"infoType":"packetsCollected"},{"$set":{"ivs":0,"last_ivs":0}})
+        ourCollection.update_one({"infoType":"currentAttackName"},{"$set":{"currentAttackName":"None"}})
+        ourCollection.update_one({"infoType":"password"},{"$set":{"password":"not found"}})
 
 
 def updatePacketsinDB(ivs, last_ivs):
