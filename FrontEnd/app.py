@@ -15,7 +15,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/getPassword")
-def getPackets():
+def get_password():
     client = MongoClient()
     wifiteDB = client["wifiteDB"]
     ourCollection = wifiteDB["ourCollection"]
@@ -64,7 +64,7 @@ def get_packets():
     return jsonify(ivs=currentIVs,last_ivs=lastIVs,rate=rate)
 
 @app.route("/startAttack/<ssid>")
-def startAttack(ssid):
+def start_attack(ssid):
 
     global current_process
     

@@ -9,7 +9,9 @@
     <div id="loader"></div>
     <div class="row">
         <div class="col-md-9 col-lg-9">
+           <div id="status"></div>
             <div id="packets"></div>
+            <div id="password"></div>
         </div>
     </div>
 
@@ -73,6 +75,18 @@
     });
 </script>
 <script>
+    function getPassword() {
+        
+        $.getJSON("/getPassword", function (response) {
+            
+            if(response.password) {
+            
+                    $("#password").html("<h1> The password is: " + response.password + " </h1>");
+                
+            }
+            
+        });
+    }
     $(function () {
 
 
@@ -80,7 +94,18 @@
 
         setTimeout(function () {}, 3000);
 
-      
+        var time_two = setInterval(function() {
+            
+            $.getJSON("/getStatus", function (response) {
+
+                
+                $("#status").html("<h2>" + response.currentAttackName + "</h2>");
+
+            }); // matches getJSON
+
+            
+            
+        }, 5000);
         
         var time = setInterval(function() {
             
@@ -97,13 +122,23 @@
 
                     $("#packets").append("<h2 style='color:\"#428bca\"'>Over 10k IVs collected </h2>");
                     
+                    var passwordTime = setInterval(function () {
+                        
+                        getPassword();
+                        
+                    }, 2000);
+                    
+                    
                     clearInterval(time);
+                    clearInterval(time_two);
                     
                 }
 
             }); // matches getJSON
             
         }, 5000);
+        
+        
         
 
 
