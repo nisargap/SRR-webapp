@@ -81,7 +81,9 @@
             
             if(response.password) {
             
-                    $("#password").html("<h1> The password is: " + response.password + " </h1>");
+                    $("#password").html("");
+                    $("#password").html("<h2> The password is: " + response.password + " </h2>");
+                    $('#loader').remove();
                 
             }
             
@@ -99,7 +101,7 @@
             $.getJSON("/getStatus", function (response) {
 
                 
-                $("#status").html("<h2>" + response.currentAttackName + "</h2>");
+                $("#status").html("<h2> Attack Status: " + response.currentAttackName + "</h2>");
                 
                 if (response.currentAttackName.indexOf("inished") >= 0) {
                     
@@ -107,6 +109,7 @@
                     var passwordTime = setInterval(function () {
                         
                         getPassword();
+                        clearInterval(time_two);
                         
                     }, 2000);
                 }
@@ -132,6 +135,8 @@
 
                     $("#packets").append("<h2 style='color:\"#428bca\"'>Over 10k IVs collected </h2>");
                     $("#packets").append("<h2 style='color:\"#428bca\"'>Attempting to Crack Password </h2>");
+                    var target = document.getElementById('loader');
+                    var spinner = new Spinner(opts).spin(target);
                     
                     clearInterval(time);
                     
